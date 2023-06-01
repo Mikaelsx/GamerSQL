@@ -10574,11 +10574,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\51915337801\\Desktop\\GamerSQL\\ProjetoGameSQL\\ProjetoGameSQL.csproj",
+      "projectUniqueName": "C:\\Users\\51915337801\\Desktop\\ProjetoGameSQL\\ProjetoGameSQL.csproj",
       "projectName": "ProjetoGameSQL",
-      "projectPath": "C:\\Users\\51915337801\\Desktop\\GamerSQL\\ProjetoGameSQL\\ProjetoGameSQL.csproj",
+      "projectPath": "C:\\Users\\51915337801\\Desktop\\ProjetoGameSQL\\ProjetoGameSQL.csproj",
       "packagesPath": "C:\\Users\\51915337801\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\51915337801\\Desktop\\GamerSQL\\ProjetoGameSQL\\obj\\",
+      "outputPath": "C:\\Users\\51915337801\\Desktop\\ProjetoGameSQL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\51915337801\\AppData\\Roaming\\NuGet\\NuGet.Config",
