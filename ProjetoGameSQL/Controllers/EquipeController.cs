@@ -65,7 +65,7 @@ namespace ProjetoGameSQL.Controllers
             }
             else
             {
-                novaEquipe.Imagem = "padrao.png";
+                novaEquipe.Imagem = "Icon.png";
             }
 
             // novaEquipe.Imagem = form["Imagem"].ToString();
@@ -97,7 +97,7 @@ namespace ProjetoGameSQL.Controllers
         {
             Equipe e = c.Equipe.First(e => e.IdEquipe == id);
 
-            ViewBag.Equipe = 0;
+            ViewBag.Equipe = e;
 
             return View("Edit");
         }
