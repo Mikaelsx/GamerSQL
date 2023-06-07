@@ -25,6 +25,7 @@ namespace ProjetoGameSQL.Controllers
         [Route("Listar")] //http:localhost/Equipe/Listar
         public IActionResult Index()
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             //Forma de armazenamento (Mochila) que contem as Equipes 
             //Podemos usar essa Mochila na View de Equipe
             ViewBag.Equipe = c.Equipe.ToList();
@@ -82,6 +83,8 @@ namespace ProjetoGameSQL.Controllers
         [Route("Excluir/{id}")]
         public IActionResult Excluir(int id)
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+
             Equipe e = c.Equipe.First( e => e.IdEquipe == id);
 
             c.Equipe.Remove(e);

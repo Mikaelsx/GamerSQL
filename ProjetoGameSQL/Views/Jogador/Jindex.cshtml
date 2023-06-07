@@ -4,20 +4,12 @@
     ViewData["Title"] = "Jogador";
 }
 
-<h1>Tela de Jogadores</h1>
+<h2>Tela de Jogadores</h2>
 
-<form method="post" action="@Url.Action("Cadastrar")" enctype="multipart/form-data">
 
+<form method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
     <label for="">Nome</label>
     <input type="text" name="Nome">
-@* 
-    <select name="" id="">
-        <option value="0">Selecione uma opção</option>
-        @foreach (var item in ViewBag.Equipe)
-        {
-           <option value="">@item.Nome</option>
-        }
-    </select> *@
 
     <label for="">Email</label>
     <input type="text" name="Email">
@@ -25,17 +17,32 @@
     <label for="">Senha</label>
     <input type="text" name="Senha">
 
-    <button type="submit">Cadastrar</button>
 
-</form>
+    <label for="">Equipe</label>
+    <select class="form-control" id="IdEquipe" width="80px" name="IdEquipe">
+        <option value="">Selecione
+            @foreach (var item in ViewBag.Equipe)
+            {
+                <option value= "@item.IdEquipe">@item.Nome</option>
+            }
+        </option>
+
+    </select>
+
+    <button type="submit">Cadastrar</button>
+</form> 
+
 
 <table class="table table-striped table-responsive">
-    <thead>
+<thead>
         <th>ID</th>
         <th>Nome</th>
         <th>Email</th>
         <th>Senha</th>
-    </thead>
+        <th>Equipe</th>
+</thead>
+
+
 
         <tbody>
         @foreach (Jogador jogador in ViewBag.Jogador)
@@ -45,9 +52,10 @@
                 <td>@jogador.Nome</td>
                 <td>@jogador.Email</td>
                 <td>@jogador.Senha</td>
+                <td><img src="/img/Equipes/@jogador.Equipe.Imagem" alt="@jogador.Equipe.Imagem" width="30px"></td>
+                <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador">Excluir</a></td>
+                <td><a asp-area="" asp-controller="Jogador" asp-action="Editar" asp-route-id="@jogador.IdJogador">Editar</a></td>
             </tr> 
         }
-    
-        
-    </tbody>
+        </tbody>
 </table>
