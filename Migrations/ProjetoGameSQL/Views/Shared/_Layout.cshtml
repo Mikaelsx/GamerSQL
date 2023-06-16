@@ -107,14 +107,19 @@ else{
                 <div class="nav-bkg">
                     <nav>
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
-                        
+                        <a href="~/#noticias">Notícias</a>
                         @if (ViewBag.UserName != null)
                         {
                         <a class="nav-link text-dark" asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
                         <a class="nav-link text-dark" asp-area="" asp-controller="Jogador" asp-action="Jindex">Jogadores</a>
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Logout">Logout</a>
+                        <a class="nav-link text-dark" id="nm" asp-area="" asp-controller="Login" asp-action="Logout">Olá, @ViewBag.UserName| Logout</a>
                         }
-                        <a href="~/#noticias">Notícias</a>
+                        <style>
+                            #nm {
+                                display: flex;
+                            }
+                        </style>
+                        
 
                         <a class="phone-box">
                             <img src="~/assets/phone-icon.png" alt="phone icon" title="Ícone Telefone">
