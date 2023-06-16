@@ -89,7 +89,17 @@ else{
                 <h1>
                     <span class="title">Gamer</span>
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    @if (ViewBag.UserName == null)
+                    {
+                    <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Login">
                     <img src="~/assets/logotipo-gamer.svg" id="logotipo" alt="Logotipo Gamer" title="Gamer Logotipo">
+                    </a>
+                    }
+                    else
+                    {
+                    <img src="~/assets/logotipo-gamer.svg" id="logotipo" alt="Logotipo Gamer" title="Gamer Logotipo">
+                    }
+                    
                     </a>
                 </h1>
 

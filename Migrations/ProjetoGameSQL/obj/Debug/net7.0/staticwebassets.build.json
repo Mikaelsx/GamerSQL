@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nYbSRYE8q0LR146H6AqS5jMcihOqSGBORcvrBzTD800=",
+  "Hash": "j0Y6zH3OehyMiqBLjZSq78CgkKYy5PeML81HleKZpCw=",
   "Source": "ProjetoGameSQL",
   "BasePath": "_content/ProjetoGameSQL",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\home.css"
+    },
+    {
+      "Identity": "C:\\Users\\51915337801\\Desktop\\Migrations\\ProjetoGameSQL\\wwwroot\\css\\jogadores.css",
+      "SourceId": "ProjetoGameSQL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\51915337801\\Desktop\\Migrations\\ProjetoGameSQL\\wwwroot\\",
+      "BasePath": "_content/ProjetoGameSQL",
+      "RelativePath": "css/jogadores.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\jogadores.css"
     },
     {
       "Identity": "C:\\Users\\51915337801\\Desktop\\Migrations\\ProjetoGameSQL\\wwwroot\\css\\login.css",
